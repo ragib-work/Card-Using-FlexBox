@@ -1,4 +1,93 @@
-html, body {
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+}
+
+.card-img{
+ object-fit: cover;
+ height: 15rem;
+}
+
+.card{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    background: #111D4A;
+}
+
+.content{
+    padding: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-title{
+    line-height: 1;
+    font-size: 2.5rem;
+    color: #05CBE9;
+}
+
+.content-body{
+    margin-bottom: 4.5rem;
+    color: #FFFFFF;
+    opacity: 81%;
+}
+
+.content-footer{
+
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.reading-time{
+    width: 50px;
+    font-weight: 600;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.btn{
+    text-decoration: none;
+    color: #111D4A;
+    padding: 1rem 2rem;
+    background: #05CBE9;
+}
+
+@media(min-width:834px){
+    .card{
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card-img{
+        height: 100%;
+    }
+
 }
